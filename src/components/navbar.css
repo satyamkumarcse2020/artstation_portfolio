@@ -1,0 +1,115 @@
+body{
+    padding: 10px;
+    color: white;
+}
+.profile{
+
+    color: white;
+    box-shadow: 0 2px 4px 1px white;
+    border-radius: 10px;
+
+
+}
+
+.imgDiv{
+   
+    border-radius: 50%;
+    
+
+}
+.imgDiv image{
+    width: 100%;
+    height: 100%;
+}
+
+.upArrow{
+    height: 100%;
+    margin: auto 1% auto auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bgNAv{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+  
+    margin:0 auto 20px auto;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+.bgNAvVideo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire div */
+    z-index: -1; /* Ensure the video stays in the background */
+  }
+
+
+.navBar{
+    background-color: transparent;
+    box-shadow: 0 0px 2px white;
+    padding: 10px;
+    border-radius: 10px;
+
+
+    
+  animation-name: rotateAnimation;
+  animation-duration: 1.5s; /* Firefox requires this to apply the animation */
+  animation-direction: normal;
+
+}
+
+@keyframes rotateAnimation {
+    from {
+        translate: 150vw 0;
+        scale: 200% 1;    
+    }
+    to {
+        scale: 100% 1;  
+        translate: 0 0;
+      }
+  }
+
+
+
+.navBar ul{
+    transition: scale 0.15s linear, color 0.15s linear;
+
+
+}
+.navBar ul:hover{
+cursor: pointer;
+scale: 1.10;
+}
+
+
+
+
+
+
+
+
+/* .socialMediaNav{
+    color: white;
+    width: 16%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid green;
+}
+.socialMediaNav img{
+    width: 15px;
+    flex: 1;
+    
+}
+.socialMediaNav img:hover{
+    cursor: pointer;
+} */
